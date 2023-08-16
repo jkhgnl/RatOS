@@ -1,11 +1,13 @@
 org 7c00H
+;init the screen
 mov ah,0x06				
-    mov bh,0x07					
-    mov al,0
-    mov cx,0   
-    mov dx,0xffff  
-    mov bh,0x00			
-    int 0x10
+mov bh,0x07					
+mov al,0
+mov cx,0   
+mov dx,0xffff  
+mov bh,0x00			
+int 0x10
+
 Re:
 mov bp,Msg
 mov ax,cs
